@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+  scroll-behavior:smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', cursive;
+    
+}
+nav {
+    background: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #121A24;
+  text-decoration:none ; 
+  font-size : 24px;
+  font-weight: bold;
+  padding-right: 0px;
+}
+nav a:hover {
+  color: #57a8eb;
+}
+.hero {
+    height: 75vh;
+    background: #121A2A;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+   
+}
+#heading{
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#intro {
+    color: #57a8eb;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: 52px;
+}
+#para1 {
+    color: #c5c5c5;
+    font-size: 24px;
+    margin-top: -20px;
+    margin-left: 52px;
+    width: 500px;
+}
+
+#image1 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border-radius: 20px;
+    margin-top: -340px;
+    margin-left: 750px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#image1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   background: #F4F4F4;
+  height: 75vh;
+}
+
+#heading2 {
+color: #121A2A;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 27%;
+}
+#para2 {
+  color: #101233;
+  font-size: 24px;
+  margin-top: -100px;
+  margin-left: 3%;
+}
+#benefits_and_applications {
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #121A2A; 
+    max-height: 75vh;
+    padding: 5rem 0;
+}
+h3{
+font-size: 30px; 
+color:#1e90ff;
+}
+li{
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 10px;
+} 
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+table, th, td{
+border:2px solid #121A2A;
+}
+
+th{
+background-color:#121A2A;
+color:#ffffff; 
+}
+
+th, td{
+padding:10px;
+text-align:left;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 8px 12px;
+        font-size: 20px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #heading {
+        font-size: 32px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    #intro {
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    #para1 {
+        font-size: 20px;
+        margin-left: 20px;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    #image1 {
+        width: 320px;
+        height: 320px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .about {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #heading2 {
+        margin-left: 20px;
+        font-size: 32px;
+    }
+
+    #para2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    #benefits_and_applications {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #benefits_and_applications div {
+        width: 100%;
+        max-width: 520px;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav a {
+        font-size: 18px;
+        margin: 6px 8px;
+    }
+
+    #heading {
+        font-size: 28px;
+    }
+
+    #intro {
+        font-size: 22px;
+    }
+
+    #para1,
+    #para2 {
+        font-size: 18px;
+    }
+
+    #image1 {
+        width: 100%;
+        height: auto;
+        max-width: 280px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+<body>
+  
+ <header>
+       <nav>
+  <a href="#hero" >Home</a>
+  <a href="#about">About</a>
+  <a href="#benefits_and_applications">Benefits and Application</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header> 
+<section id="hero" class="hero">
+     
+   <h1 ID="heading">My Favorite Technology</h1>
+    <h2 id = "intro">-Web Technology</h2>
+    <p id="para1">Web technology refers to the collection of tools, programming languages, protocols, and frameworks used to create, design, maintain, and operate websites and web applications on the Internet.</p>
+    
+    
+        <img src="image1.png" alt="image of me" id="image1">
+        
+   
+</section>
+
+<section id="about" class="about">
+   <h1 id="heading2">What is Web Technology?</h1>
+   <p id="para2">Web technology plays a vital role in today's digital world by enabling communication, information sharing, online learning, entertainment, and e-commerce. It allows businesses, organizations, and individuals to connect with people globally through websites and web applications. Technologies such as HTML, CSS, and JavaScript help developers create interactive, responsive, and user-friendly web pages that enhance the online experience and make digital services easily accessible to everyone.
+</p>
+   </section>
+  
+  
+  <section id="benefits_and_applications">
+  <div>
+    <h3>Benefits of Web Technology</h3>
+
+    <ul>
+        <li>Global Reach</li>
+        <li>Fast Communication</li>
+        <li>Easy Access to Information</li>
+        <li>Career Opportunities</li>
+    </ul>
+ </div>
+  <div>
+    <h3>Applications of Web Technology</h3>
+
+    <ul>
+        <li>Portfolio Websites</li>
+        <li>E-Commerce Stores</li>
+        <li>Social Media Platforms</li>
+        <li>Online Learning Websites</li>
+    </ul>
+  </div>
+</section>
+
+<section id="technologies">
+    <h3 style="color: #121A2A;">Technologies Used</h3>
+
+    <table>
+        <tr>
+            <th>Technology</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Creates the structure of web pages</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Styles the web pages</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Adds interactivity</td>
+        </tr>
+
+        <tr>
+            <td>Backend Languages</td>
+            <td>Handle server-side processing</td>
+        </tr>
+
+        <tr>
+            <td>Database</td>
+            <td>Stores website data</td>
+        </tr>
+    </table>
+</section>
+  <footer id="contact" style="background-color: #121A2A; padding: 20px; text-align: center;">
+    <p style="color: #ffffff; text-align: center;">Made by Bhavya Tandon<br>Ahemdabad, Gujarat</p></footer>
+</body>
+</html>
